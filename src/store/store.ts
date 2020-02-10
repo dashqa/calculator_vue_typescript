@@ -8,7 +8,7 @@ export default class Store {
   public fetching: Fetching = false;
 
   @Mutation()
-  appendBuffer(value: string | number): void {
+  appendBuffer(value: string): void {
     this.buffer = this.buffer += value;
   }
 

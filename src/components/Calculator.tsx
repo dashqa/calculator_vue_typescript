@@ -42,13 +42,14 @@ export default class Calculator extends VueComponent {
     }
   }
 
-  private appendBuffer(value: string | number): void {
+  private appendBuffer(value: string): void {
     const lastChar = this.buffer.charAt(this.buffer.length -1);
+    const isNumeric = /^\d+$/.test(value);
 
-    if (lastChar !== value) {
+    if (lastChar !== value || isNumeric) {
       this.store.appendBuffer(value);
 
-      if (String(value).match(/\d/g)) {
+      if (isNumeric) {
        this.store.setResult();
       }
     }
