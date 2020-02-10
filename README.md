@@ -1,4 +1,4 @@
-# ozon_test
+# Calculator. Test project with Vue + Typescript + JSX + Vuex Simple
 
 ## Project setup
 ```
