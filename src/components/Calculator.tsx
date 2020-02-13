@@ -74,7 +74,6 @@ export default class Calculator extends VueComponent {
   private handleClick({ target }: Event): void {
     // @ts-ignore
     const { symbol } = target.dataset;
-
     switch (symbol) {
       case 'C':
         this.clear();

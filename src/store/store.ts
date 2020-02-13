@@ -4,7 +4,9 @@ import { Result, Buffer, Fetching} from "@/types";
 export default class Store {
   @State()
   public buffer: Buffer = '';
+  @State()
   public result: Result = '0';
+  @State()
   public fetching: Fetching = false;
 
   @Mutation()

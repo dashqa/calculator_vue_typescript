@@ -1,7 +1,5 @@
 .calculator {
   display: grid;
-  grid-template-rows: minmax(auto, auto);
-  width: fit-content;
   margin: 0 auto;
   padding: 0.3125rem 0;
   background-color: var(--grey);
